@@ -238,16 +238,22 @@ body {
     border: 0 none;
   }
   
+  @media screen and (max-width: 980px) {
+
+  }
+  
+  @media screen and (max-width: 768px ){
+    
+}
+
+  @media screen and (max-width: 640px) {
+    #masthead {
+        position: sticky;
+        top: 0;
+  }
+    }
 
 
-
-
-
-Use three @media screen tags, each with one of these 
-max-widths: 980px, 768px and 640px
-
-Make the position of the header static 
-(the default positioning) when the screen is 640px wide.
 
 Be sure to include the viewport tag in all your HTML files, otherwise your
 media-queries won't function as expected on mobile devices.
