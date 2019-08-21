@@ -247,11 +247,16 @@ body {
 }
 
 @media (min-width: 641px) and (max-width: 768px ) {
-  body { max width: 768px;
+  body { max-width: 768px;
   }
   #masthead {
     position: sticky;
     top: 0;
+    max-width: 768px;
+  }
+  
+  nav {
+    margin-right: 50px;
   }
 }
 
@@ -259,7 +264,13 @@ body {
   body { max-width: 640px;
   }
   #masthead {
+    max-width: 640px;
       top: 0;
 }
-
+.logo {
+  text-align: center;
+}
+nav {
+  margin-right: 90px;
+}
   }
