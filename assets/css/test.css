@@ -237,12 +237,13 @@ body {
     border: 0 none;
   }
   
-  @media screen and (max-width: 980px) {
+  @media (min-width: 769px) and (max-width: 980px) {
 
   }
   
-  @media screen and (max-width: 768px ){
-    
+  @media (min-width: 641px) and (max-width: 768px ) {
+    body { max width: 768px;
+    }
 }
 
   @media screen and (max-width: 640px) {
@@ -250,4 +251,6 @@ body {
         position: sticky;
         top: 0;
   }
+  body { max-width: 640px;
+}
     }
