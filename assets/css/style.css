@@ -290,8 +290,11 @@ body {
 
   /* this is for 769-980px */
 
-@media (min-width: 769px) and (max-width: 980px) {
-#masthead {
+@media screen and (max-width: 980px) {
+body {
+  width: 100%;
+}
+  #masthead {
   position: sticky;
   top: 0;
 }
@@ -299,8 +302,14 @@ body {
 
 /* this is for 641-768px */
 
-@media (min-width: 641px) and (max-width: 768px ) {
+@media screen and (max-width: 768px ) {
   body { max-width: 768px;
+  }
+
+  #main-container {
+    padding-top: 130px;
+    padding-left: 3%;
+    width: 90%;
   }
 
   #masthead {
@@ -324,20 +333,29 @@ body {
   body { max-width: 640px;
   }
 
+  #main-container {
+    padding-top: 20px;
+    padding: 2%;
+    width: 90%;
+  }
+
   #masthead {
     max-width: 640px;
       top: 0;
 }
 
-.logo {
-  text-align: center;
+#logo {
+width: 100%;
 }
 
 nav {
   margin-right: 60px;
 }
 
+#connect {
+  width: 100%;
+}
 .sidebar {
-  margin-right: 50px;
+  margin: 8%;
 }
   }
