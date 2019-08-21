@@ -12,8 +12,7 @@ body {
   }
   
   /* sticky footer styling */
-  
-  /* https://css-tricks.com/snippets/css/sticky-footer/ */
+
   
   html,
   body {
@@ -32,8 +31,6 @@ body {
     height: 105px;
   }
   
-  /* end sticky footer styling */
-  
   /* start hover styling */
   
   #logo:hover,
@@ -49,8 +46,6 @@ body {
     cursor: pointer;
     opacity: 0.8;
   }
-  
-  /* end hover styling */
   
   /* general styling */
   
@@ -198,6 +193,53 @@ body {
     border: 1px solid #ddd;
   }
   
+  /* portfolio page */
+
+  .port-img {
+    max-width: 250px;
+    max-height: 250px;
+  }
+
+.work {
+  position: relative;
+  float: left;
+  width: 274px;
+  margin: 20px 0 25px;
+  overflow: auto;
+}
+
+.work:nth-child(even) {
+  margin-right: 40px;
+}
+
+.work img {
+  width: 100%;
+  border: 0 none;
+  opacity: 0.8;
+}
+
+.work h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
+}
+
+.auth-image {
+  float: left;
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
+}
+
   /* contact page */
   
   #contact-form ul {
@@ -238,7 +280,16 @@ body {
     border: 0 none;
   }
   
+  /* responsive images */
   
+  .responsive {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  /* this is for 769-980px */
+
 @media (min-width: 769px) and (max-width: 980px) {
 #masthead {
   position: sticky;
@@ -246,31 +297,47 @@ body {
 }
 }
 
+/* this is for 641-768px */
+
 @media (min-width: 641px) and (max-width: 768px ) {
   body { max-width: 768px;
   }
+
   #masthead {
     position: sticky;
     top: 0;
     max-width: 768px;
   }
-  
+
   nav {
     margin-right: 50px;
   }
+
+.sidebar {
+    margin-right: 100px;
+  }
 }
+
+/* this is for 0-640px */
 
 @media screen and (max-width: 640px) {
   body { max-width: 640px;
   }
+
   #masthead {
     max-width: 640px;
       top: 0;
 }
+
 .logo {
   text-align: center;
 }
+
 nav {
-  margin-right: 90px;
+  margin-right: 60px;
+}
+
+.sidebar {
+  margin-right: 50px;
 }
   }
