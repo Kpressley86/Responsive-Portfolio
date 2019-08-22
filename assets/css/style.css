@@ -247,6 +247,7 @@ body {
   }
   
   #contact-form li {
+    list-style-type: none;
     margin-bottom: 10px;
   }
   
